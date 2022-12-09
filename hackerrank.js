@@ -266,7 +266,9 @@ let remainderNull = grades[i] % 5;
 
 function remainderNull(grades) {
     // Write your code here
-
+if ( grades < 38) {
+    
+}
 
 }
 
