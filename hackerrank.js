@@ -406,3 +406,41 @@ return result;
     }
 
 
+//-------------------------------
+
+
+
+let bill=[12,12,12,6,8,10]
+
+
+function bonAppetit(bill, k, b) {
+    // Write your code here
+
+let sumBill= 0;
+
+
+for (let i = 0; i< bill.length;i++) {
+    sumBill += bill[i];
+}
+
+sumBill=sumBill-bill[k];
+sumBill= sumBill / 2;
+
+if (sumBill<b) {
+    console.log( b-sumBill);  // the website want to print on a new line, thus it shoul be in console.log().
+}
+
+else if (sumBill=b) {
+    console.log( "Bon Appetit");
+}
+
+
+
+}
+
+
+
+//----------------------------------------
+
+
+
