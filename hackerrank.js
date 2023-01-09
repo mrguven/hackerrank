@@ -206,67 +206,203 @@ console.log(birthdayCakeCandles(candles))
 
 
 
-let s = "18:00:00AM";
+// let s = "18:00:00AM";
 
 
-function timeConvesion(s) {
-    // Write your crode here
-     let controlAm= s.includes("AM")
-     let controlPm= s.includes("PM")
+// function timeConvesion(s) {
+//     // Write your crode here
+//      let controlAm= s.includes("AM")
+//      let controlPm= s.includes("PM")
 
-   let checkIndexFirstDoublePoint =s.indexOf(":");
-let checkHour = s.substr(0,checkIndexFirstDoublePoint);
-checkHour = parseInt(checkHour);
-let checkMin= s.substr(checkIndexFirstDoublePoint+1,checkIndexFirstDoublePoint+3)
-checkMin=parseInt(checkMin);
-let checkSecond = s.substr(checkIndexFirstDoublePoint+3,checkIndexFirstDoublePoint+5)
-checkSecond = parseInt(checkSecond)
-let SetPm= checkHour + 12;
+//    let checkIndexFirstDoublePoint =s.indexOf(":");
+// let checkHour = s.substr(0,checkIndexFirstDoublePoint);
+// checkHour = parseInt(checkHour);
+// let checkMin= s.substr(checkIndexFirstDoublePoint+1,checkIndexFirstDoublePoint+3)
+// checkMin=parseInt(checkMin);
+// let checkSecond = s.substr(checkIndexFirstDoublePoint+3,checkIndexFirstDoublePoint+5)
+// checkSecond = parseInt(checkSecond)
+// let SetPm= checkHour + 12;
    
  
-if (controlPm==true && checkHour===12 ) {
-    checkHour=12;
+// if (controlPm==true && checkHour===12 ) {
+//     checkHour=12;
     
-}
-else if (controlPm==true && checkHour !== 12) {
-    checkHour=SetPm;
+// }
+// else if (controlPm==true && checkHour !== 12) {
+//     checkHour=SetPm;
    
-}
-else if (controlAm==true && checkHour===12) {
-    checkHour= 00;
+// }
+// else if (controlAm==true && checkHour===12) {
+//     checkHour= "00";
     
     
-}
-checkHour=checkHour.toString()
-checkMin=checkMin.toString()
-checkSecond=checkSecond.toString()
+// }
+// checkHour=checkHour.toString()
+// checkMin=checkMin.toString()
+// checkSecond=checkSecond.toString()
 
-s = checkHour +":" + checkMin + ":" + checkSecond;
-return s;
+// s = checkHour +":" + checkMin + ":" + checkSecond;
+// return s;
 
 
 
-}
-console.log(timeConvesion(s));
+// }
+// console.log(timeConvesion(s));
  
 
 
+
+var s = "05:05:45PM";
+function timeConversion(s ) {
+    var hour = parseInt(s .substr(0, 2));
+    var minSec = s .substr(2, 6);
+    var noChange = s .substr(0, 8);
+
+    var period = s .substr(8, 2);
+
+    if (period === "PM") {
+        if (hour < 12) {
+            hour = hour + 12;
+            var newSaat = hour.toString();
+            s  = newSaat + minSec;
+        } else if (hour == 12) {
+            s  =noChange;
+        } else if (hour > 12) {
+            s  =noChange;
+        }
+    } else {
+        if (hour == 12) {
+            s  ="00" + minSec;
+        } else {
+            s  =noChange;
+        }
+    }
+    return s ;
+}
+console.log(timeConversion(s ))
 
 
 
 //------------------------------------
 
+// let grades= 78;
+// function gradingStudents(grades) {
+//     let remainder = grades % 5;
+//     // Write your code here
+// if ( grades < 38) {
+//     grades= grades;
+// }
+// else if (grades >= 38 && remainder === 3 || remainder === 8) {
+//         grades +=2;
+// }
+// return grades;
+// }
 
-1 <= n  <= 60;
-
-0<= grades[i] <= 100;
-
-let remainderNull = grades[i] % 5;
+// console.log(gradingStudents(grades))
 
 
-function remainderNull(grades) {
+///------------------------------
+
+
+// function gradingStudents(grades) {
+    
+//     // Write your code here
+    
+//     for (let j=0;j<=studentAmount;j++) {
+    
+//     for(let i=0;i<=studentAmount;i++){
+//         var remainder = grades[i] % 5;
+// if ( grades[i] < 38) {
+//     grades[i]= grades[i];
+// }
+// else if (grades[i] >= 38 && remainder === 3) {
+//         grades[i] = grades[i]+2;
+// }
+
+//     }
+//     return grades;
+//     }
+
+// }
+
+
+// console.log(gradingStudents(grades))
+
+
+
+
+
+
+let grades= [56,78,48,47,54,58];
+
+function gradingStudents(grades) {
+    
     // Write your code here
+    
+    
+    
+    for(let i=0;i<=grades.length;i++){
+        var remainder = grades[i] % 5;
 
 
+if (grades[i] >= 38 && remainder >= 3) {
+        grades[i] += 5-remainder;
 }
+
+    
+    
+    }
+    return grades;
+}
+
+console.log(gradingStudents(grades))
+
+
+//------------------------------------
+
+let arr= [1, 2 ,3, 4 ,5 ,4, 3, 2, 1, 3, 4]
+
+function migratoryBirds(arr) {
+    // Write your code here
+    let firstType = arr[0];
+    let secType= arr[1];
+    let firstResult = 0;
+    let secResult = 0;
+    let firstArray=[];
+
+
+     for (let i=0;i<arr.length;i++) {
+        for ( let j = 0;j<arr.length;j++){
+
+            if ( arr[i]==arr[j] ) {
+               firstArray=arr.push(arr[i]);
+                
+
+            }
+        }
+     }
+return firstResult;
+}
+
+console.log(migratoryBirds(arr))
+
+
+//--------------------------------------------
+
+
+function divisibleSumPairs( n,  k,  ar) {
+    // Write your code here
+let result = 0;
+
+for (let  i = 0; i<ar.length-1;i++) {
+    for (let  j=i+1;j<ar.length;j++) {
+        if ((ar[i]+ar[j])%k==0) {
+            result++;
+        }
+    }
+}
+return result;
+
+    }
+
 
