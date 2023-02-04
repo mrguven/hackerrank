@@ -70,27 +70,27 @@ console.log(sockMerchant(n, ar) )
 
 function sockMerchant(n, ar) {
     // Write your code here
-    var sonuc = 0;
-    var isAyniSayi = false;
+    var result = 0;
+    var sameNumber = false;
     var emp = new Array();
     for (var i = 0; i < ar.length; i++) {
         if (emp.length > 0) {
             for (var j = 0; j < emp.length; j++) {
                 if (emp[j] == ar[i]) {
                     emp[j] = null;
-                    isAyniSayi = true;
-                    sonuc++;
+                    sameNumber = true;
+                    result++;
                 }
             }
-            if (isAyniSayi == false) {
+            if (sameNumber == false) {
                 emp[emp.length] = ar[i];
             }
         } else {
             emp[emp.length] = ar[i];
         }
-        isAyniSayi = false;
+        sameNumber = false;
     }
-    return sonuc;
+    return result;
 
 }
 
@@ -165,6 +165,10 @@ function sockMerchant(n, ar) {
         console.log( largestOfFour(arr));
 
 
+//-------------------------------
+
+
+
 
         function confirmEnding(str, target) {
 
@@ -191,3 +195,146 @@ console.log(newTarget)
             
 
             console.log(confirmEnding("Open sesame", "same"))
+
+
+
+
+            //-----------------------------------
+
+
+            function caesarCipher(s, k) {
+
+             let   alphabet:  "abcdefghijklmnopqrstuvwxyz".split("");
+
+             let newAlphabet="";
+
+             for (let i= 0;i<s.length;i++) {
+                    if (/[a-z]/i.test(s[i])) {
+                        if (s[i]==s[i].toLowerCase()) {
+                            newAlphabet+= alphabet[alphabet.indexOf(s[i]+k)%26]
+                        }
+                        else{
+                            newAlphabet+= alphabet[alphabet.indexOf(s[i]+k)%26].toUpperCase;
+                        }
+                    }
+
+             }
+
+
+
+
+
+
+            }
+
+
+
+            //-----------------------
+
+
+
+
+            function minimumNumber(n, password) {
+                // Return the minimum number of characters to make the password strong
+                
+             
+                 
+            //match the characters. Returns -1 if no match found
+                let numbers = password.search(/[0-9]/);
+                let upper = password.search(/[A-Z]/);
+                let lower = password.search(/[a-z]/);
+                let special = password.search(/[!@#$%^&*()+-]/);
+                
+                let minNum = 0
+                let min = 6
+                if(numbers === -1) {
+                    minNum++ };
+                if(upper === -1) {
+                    minNum++ };
+                if(lower === -1) {
+                    minNum++} ;
+                if(special === -1) {
+                    minNum++} ; 
+               
+                if(n < min){
+                    return Math.max(minNum, min - n);
+                } else {
+                    return minNum;
+                }
+                
+            
+            }
+
+
+            //--------------------------------
+
+
+
+            function marsExploration(s) {
+                // Write your code here
+                
+                s=s.split("");
+               
+                let result = 0;
+                
+                
+                for (let i=0;i<s.length-2;i+=3) {
+                    if (s[0+i]!=="S") {
+                        result+=1;
+                    } 
+                    if (s[1+i]!=="O") {
+                        result+=1;
+                    } 
+                     if (s[2+i]!=="S") {
+                        result+=1;
+                    } 
+                    
+                }
+                    
+                    return result;
+                
+                }
+
+
+//--------------------------------
+s="saveChangesInTheEditor";
+
+function camelcase(s) {
+    // Write your code here
+    
+    
+    let result=0;
+    for(let i=0;i<s.length;i++ ){
+        if (s.charAt(i)===s.charAt(i).toUpperCase) {
+            result++;
+        }
+       
+    }
+    
+    return result+1;
+    
+
+}
+
+console.log(camelcase(s));
+
+
+///------------------------
+
+
+function hackerrankInString(s) {
+    // Write your code here
+    if (/.*h.*a.*c.*k.*e.*r.*r.*a.*n.*k.*/i.test(s)==true) {
+        return "YES";
+    }
+else {
+    return "NO";
+}    
+ 
+}
+
+//--------------------
+
+
+
+
