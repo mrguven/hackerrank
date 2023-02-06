@@ -385,3 +385,35 @@ return firstResult;
 }
 
 console.log(migratoryBirds(arr))
+
+//-------------------
+
+
+
+const cartForParty = {
+    // TODO complete this objectead
+beer:1.75,
+chips: 0.00,
+bread:1,
+water: 0.5,
+coke:1
+
+  };
+
+
+  function calculateTotalPrice(cartForParty) {
+    // TODO replace this comment with your code
+let totalPrice = Object.values(cartForParty).reduce((a,b) => a+b,0);
+return totalPrice;
+  }
+  
+
+  function test1() {
+    console.log('\nTest 1: calculateTotalPrice should take one parameter');
+    // TODO replace this comment with your code
+  }
+  
+  function test2() {
+    console.log('\nTest 2: return correct output when passed cartForParty');
+    // TODO replace this comment with your code
+  }
