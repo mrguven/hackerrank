@@ -343,6 +343,7 @@ function gradingStudents(grades) {
     
     for(let i=0;i<=grades.length;i++){
         var remainder = grades[i] % 5;
+<<<<<<< HEAD
 
 
 if (grades[i] >= 38 && remainder >= 3) {
@@ -386,34 +387,103 @@ return firstResult;
 
 console.log(migratoryBirds(arr))
 
-//-------------------
+
+//--------------------------------------------
+
+
+function divisibleSumPairs( n,  k,  ar) {
+    // Write your code here
+let result = 0;
+
+for (let  i = 0; i<ar.length-1;i++) {
+    for (let  j=i+1;j<ar.length;j++) {
+        if ((ar[i]+ar[j])%k==0) {
+            result++;
+        }
+    }
+}
+return result;
+
+    }
+
+
+//-------------------------------
 
 
 
-const cartForParty = {
-    // TODO complete this objectead
-beer:1.75,
-chips: 0.00,
-bread:1,
-water: 0.5,
-coke:1
-
-  };
+let bill=[12,12,12,6,8,10]
 
 
-  function calculateTotalPrice(cartForParty) {
-    // TODO replace this comment with your code
-let totalPrice = Object.values(cartForParty).reduce((a,b) => a+b,0);
-return totalPrice;
-  }
-  
+function bonAppetit(bill, k, b) {
+    // Write your code here
 
-  function test1() {
-    console.log('\nTest 1: calculateTotalPrice should take one parameter');
-    // TODO replace this comment with your code
-  }
-  
-  function test2() {
-    console.log('\nTest 2: return correct output when passed cartForParty');
-    // TODO replace this comment with your code
-  }
+let sumBill= 0;
+
+
+for (let i = 0; i< bill.length;i++) {
+    sumBill += bill[i];
+}
+
+sumBill=sumBill-bill[k];
+sumBill= sumBill / 2;
+
+if (sumBill<b) {
+    console.log( b-sumBill);  // the website want to print on a new line, thus it shoul be in console.log().
+}
+
+else if (sumBill=b) {
+    console.log( "Bon Appetit");
+}
+
+=======
+>>>>>>> d344a57463541185a601b92ef2d6b8fc926b1187
+
+
+if (grades[i] >= 38 && remainder >= 3) {
+        grades[i] += 5-remainder;
+}
+
+<<<<<<< HEAD
+
+
+//----------------------------------------
+
+
+
+=======
+    
+    
+    }
+    return grades;
+}
+
+console.log(gradingStudents(grades))
+
+
+//------------------------------------
+
+let arr= [1, 2 ,3, 4 ,5 ,4, 3, 2, 1, 3, 4]
+
+function migratoryBirds(arr) {
+    // Write your code here
+    let firstType = arr[0];
+    let secType= arr[1];
+    let firstResult = 0;
+    let secResult = 0;
+    let firstArray=[];
+
+
+     for (let i=0;i<arr.length;i++) {
+        for ( let j = 0;j<arr.length;j++){
+
+            if ( arr[i]==arr[j] ) {
+               firstArray=arr.push(arr[i]);
+                
+
+            }
+        }
+     }
+return firstResult;
+}
+
+console.log(migratoryBirds(arr))
