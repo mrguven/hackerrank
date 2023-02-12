@@ -123,7 +123,7 @@ function removeItemOnce(arr, value) {
 
 //---------------
 
-let arr1=[6,2,12,4,5,1];
+let arr11=[6,2,12,4,5,1];
 
 
 let sum3= 0 ;
@@ -136,19 +136,19 @@ let i = 0;
 function miniMaxSum(arr1) {
     // Write your code here
 
-    let sum2 = arr1[0];
-    let sum1 = arr1[0];
-    for(;i<arr1.length;i++) {
+    let sum2 = arr11[0];
+    let sum1 = arr11[0];
+    for(;i<arr11.length;i++) {
         
-        if(arr1[i]<sum2){
-            sum2=arr1[i];
+        if(arr11[i]<sum2){
+            sum2=arr11[i];
         }
 
-        if(arr1[i]>sum1){
-            sum1=arr1[i];
+        if(arr11[i]>sum1){
+            sum1=arr11[i];
         }
 
-        sum3+= arr1[i];
+        sum3+= arr11[i];
         
 
        }
@@ -162,7 +162,7 @@ function miniMaxSum(arr1) {
    
    
 
-console.log(miniMaxSum(arr1))
+console.log(miniMaxSum(arr11))
 
 //----------------------------
 
@@ -343,7 +343,7 @@ function gradingStudents(grades) {
     
     for(let i=0;i<=grades.length;i++){
         var remainder = grades[i] % 5;
-<<<<<<< HEAD
+
 
 
 if (grades[i] >= 38 && remainder >= 3) {
@@ -361,22 +361,22 @@ console.log(gradingStudents(grades))
 
 //------------------------------------
 
-let arr= [1, 2 ,3, 4 ,5 ,4, 3, 2, 1, 3, 4]
+let arr1= [1, 2 ,3, 4 ,5 ,4, 3, 2, 1, 3, 4]
 
 function migratoryBirds(arr) {
     // Write your code here
-    let firstType = arr[0];
-    let secType= arr[1];
+    let firstType = arr1[0];
+    let secType= arr1[1];
     let firstResult = 0;
     let secResult = 0;
     let firstArray=[];
 
 
-     for (let i=0;i<arr.length;i++) {
-        for ( let j = 0;j<arr.length;j++){
+     for (let i=0;i<arr1.length;i++) {
+        for ( let j = 0;j<arr1.length;j++){
 
-            if ( arr[i]==arr[j] ) {
-               firstArray=arr.push(arr[i]);
+            if ( arr1[i]==arr1[j] ) {
+               firstArray=arr1.push(arr1[i]);
                 
 
             }
@@ -385,7 +385,7 @@ function migratoryBirds(arr) {
 return firstResult;
 }
 
-console.log(migratoryBirds(arr))
+console.log(migratoryBirds(arr1))
 
 
 //--------------------------------------------
@@ -435,29 +435,22 @@ else if (sumBill=b) {
     console.log( "Bon Appetit");
 }
 
-=======
->>>>>>> d344a57463541185a601b92ef2d6b8fc926b1187
+
+//------------------
 
 
 if (grades[i] >= 38 && remainder >= 3) {
         grades[i] += 5-remainder;
 }
 
-<<<<<<< HEAD
-
-
-//----------------------------------------
-
-
-
-=======
+   
     
-    
-    }
     return grades;
 }
 
 console.log(gradingStudents(grades))
+
+
 
 
 //------------------------------------
@@ -486,4 +479,40 @@ function migratoryBirds(arr) {
 return firstResult;
 }
 
-console.log(migratoryBirds(arr))
+console.log(migratoryBirds(arr));
+
+
+
+
+
+
+
+
+//------------------------------
+
+let s1= "hello";
+let s2="world";
+
+function twoStrings(s1, s2) {
+    // Write your code here
+    
+   
+    
+    for (let i=0;i<s1.length;i++) {
+        for(let j=0;j<s2.length;j++) {
+            if (s2.substring(j) == s1.substring(i)) {
+                return "YES";
+                break;
+            }
+            else {
+                return "NO";
+            }
+        }
+    }
+    
+    
+
+}
+
+
+

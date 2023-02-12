@@ -202,30 +202,30 @@ console.log(newTarget)
             //-----------------------------------
 
 
-            function caesarCipher(s, k) {
+            // function caesarCipher(s, k) {
 
-             let   alphabet:  "abcdefghijklmnopqrstuvwxyz".split("");
+            //  let   alphabet:  "abcdefghijklmnopqrstuvwxyz".split("");
 
-             let newAlphabet="";
+            //  let newAlphabet="";
 
-             for (let i= 0;i<s.length;i++) {
-                    if (/[a-z]/i.test(s[i])) {
-                        if (s[i]==s[i].toLowerCase()) {
-                            newAlphabet+= alphabet[alphabet.indexOf(s[i]+k)%26]
-                        }
-                        else{
-                            newAlphabet+= alphabet[alphabet.indexOf(s[i]+k)%26].toUpperCase;
-                        }
-                    }
+            //  for (let i= 0;i<s.length;i++) {
+            //         if (/[a-z]/i.test(s[i])) {
+            //             if (s[i]==s[i].toLowerCase()) {
+            //                 newAlphabet+= alphabet[alphabet.indexOf(s[i]+k)%26]
+            //             }
+            //             else{
+            //                 newAlphabet+= alphabet[alphabet.indexOf(s[i]+k)%26].toUpperCase;
+            //             }
+            //         }
 
-             }
-
-
+            //  }
 
 
 
 
-            }
+
+
+            // }
 
 
 
@@ -336,5 +336,23 @@ else {
 //--------------------
 
 
+let s1= "hello";
+let s2="world";
+
+function twoStrings(s1, s2) {
+    // Write your code here
+    for(let i=0; i<s1.length; i++){
+        if(s2.includes(s1[i])){
+            return "YES";
+        }
+    }
+    return "NO";
+
+}
+
+console.log(twoStrings(s1,s2))
 
 
+
+
+//----------------------
