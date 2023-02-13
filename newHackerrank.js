@@ -356,3 +356,26 @@ console.log(twoStrings(s1,s2))
 
 
 //----------------------
+
+
+let numKids = [1,2,3,4,5];
+let partnerNames =["john","eva","adem","tr","br",];
+let locations =["ams","rot","brug","den","haag",];
+let jobTitles =["doctor","engineer","techicien","artist","teacher",];
+
+ function selectRondomly (xx) {
+
+     return xx[Math.floor(Math.random()*5)];
+    
+
+
+
+};
+
+function tellFortune () {
+console.log( `You will be a ${selectRondomly (jobTitles)} in ${selectRondomly (locations)}, 
+married to ${selectRondomly (partnerNames)} with ${selectRondomly (numKids)} kids.`)
+}
+
+console.log(tellFortune(numKids,partnerNames,locations,jobTitles));
+console.log(tellFortune(numKids,partnerNames,locations,jobTitles));
