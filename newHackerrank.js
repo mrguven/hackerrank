@@ -419,3 +419,55 @@ return totalPrice;
   }
 
   console.log(computeEarnings(hourlyRate,mondayTasks))
+
+
+
+  //-----------------------------
+
+
+
+
+  function gameOfThrones(s) {
+    let oddCharacters = 0;
+    [...new Set([...s])].forEach((char) => {
+      const match = s.match(new RegExp(char, "g"));
+      if (match.length % 2 !== 0) oddCharacters++;
+    });
+    return oddCharacters <= 1 ? "YES" : "NO";
+  }
+  
+
+//------------------------
+
+
+
+function plusMinus(arr) {
+    // Write your code here
+let positive=0;
+let negative=0;
+let zero=0;
+let result =[];
+
+for (let i=0;i<arr.length;i++) {
+    if (arr[i]>0) {
+        positive++;
+    }
+    
+    else if (arr[i]<0) {
+        negative++
+    }
+    
+    else if (arr[i]==0) {
+        zero++
+    }
+    
+}
+
+result[0] = (positive/arr.length).toFixed(6);
+result[1] = (negative/arr.length).toFixed(6);
+result[2] = (zero/arr.length).toFixed(6);
+    console.log(result[0]);
+console.log(result[1]);
+console.log(result[2]);
+
+}
