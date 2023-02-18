@@ -471,3 +471,68 @@ console.log(result[1]);
 console.log(result[2]);
 
 }
+
+
+//-----------------------
+
+
+
+function miniMaxSum(arr) {
+    // Write your code here
+
+let minN=arr[0];
+let maxN=arr[0];
+let total=0;
+
+for (let i=0;i<arr.length;i++) {
+
+if (arr[i]>maxN) {
+    maxN=arr[i];
+}
+
+if (arr[i]<minN) {
+    minN=arr[i];
+}
+
+total+=arr[i];
+
+}
+
+console.log(total-maxN,total-minN)
+
+
+}
+
+
+
+//----------------------
+
+
+/* GUI = Grafical User interface
+API= Application user interface , other program interact
+ with other program 
+
+ key needed.
+ 
+ request format,
+ response format;
+ status code{200..,400..}
+
+ get() -- get info from server
+ post()-- create source in server
+ put() -- update file or data
+ patch()- patially update
+ delete() -- delete the file
+
+
+
+
+
+
+
+*/ 
+
+
+//------------------
+
+
