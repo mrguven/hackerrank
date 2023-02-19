@@ -518,6 +518,11 @@ API= Application user interface , other program interact
  response format;
  status code{200..,400..}
 
+ --2** is successful response
+ --3** is redirection responce
+ --4** is client error
+ --5** is server error
+
  get() -- get info from server
  post()-- create source in server
  put() -- update file or data
@@ -525,7 +530,10 @@ API= Application user interface , other program interact
  delete() -- delete the file
 
 
+xml is  data format 
+json is data format
 
+ 
 
 
 
