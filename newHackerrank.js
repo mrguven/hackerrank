@@ -539,6 +539,14 @@ json is data format
 
 
 
+
+
+var http = requare('http');
+ 
+var server = http.createServer(function (req,res) {
+
+})
+
 */ 
 
 
@@ -568,5 +576,34 @@ function lonelyinteger(a) {
     }
     
      return result;
+
+}
+
+
+//--------------------
+
+
+
+function diagonalDifference(arr) {
+    // Write your code here
+    
+    let forw=0;
+    let back=0;
+    let result=0;
+    
+    for (let i=0;i<arr.length;i++) {
+        
+      forw+=  arr[i][i];
+        
+    }
+    
+    for (let j=arr.length;j>=0;j--) {
+        
+      back+=  arr[j][j];
+        
+    }
+    
+    return (Math.abs(back-forw))
+    
 
 }
