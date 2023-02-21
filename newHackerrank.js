@@ -534,6 +534,7 @@ xml is  data format
 json is data format
 
  
+<Footer /> = so we call the fonction and its component
 
 
 
@@ -544,3 +545,28 @@ json is data format
 //------------------
 
 
+
+function lonelyinteger(a) {
+    // Write your code here
+    
+    
+   let result=0; 
+    for (let i=0;i<a.length;i++) {
+         let repeat=0;
+        for(let j=0;j<a.length;j++) {
+            if ( a[i]==a[j]) {
+                repeat++;
+                
+            }
+           
+            
+        }
+         if (repeat!==2) {
+                 result=a[i];
+            }
+       
+    }
+    
+     return result;
+
+}
