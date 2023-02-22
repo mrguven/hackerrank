@@ -582,28 +582,30 @@ function lonelyinteger(a) {
 
 //--------------------
 
-
+arr = [[2,1,4],[5,1,2],[3,1,9]]
 
 function diagonalDifference(arr) {
     // Write your code here
     
     let forw=0;
     let back=0;
-    let result=0;
+    
     
     for (let i=0;i<arr.length;i++) {
         
       forw+=  arr[i][i];
-        
+       return forw; 
     }
     
     for (let j=arr.length;j>=0;j--) {
         
       back+=  arr[j][j];
-        
+        return back;
     }
     
     return (Math.abs(back-forw))
     
 
 }
+
+console.log(diagonalDifference(arr))
