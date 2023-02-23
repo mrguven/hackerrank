@@ -582,30 +582,35 @@ function lonelyinteger(a) {
 
 //--------------------
 
-arr = [[2,1,4],[5,1,2],[3,1,9]]
+arr = [[11 ,2 ,4],[4, 5, 6],[10, 8, -12]]
 
 function diagonalDifference(arr) {
     // Write your code here
     
-    let forw=0;
+     let forw=0;
     let back=0;
-    
-    
-    for (let i=0;i<arr.length;i++) {
-        
+    let result=0;
+    let j=arr.length-1;
+   for (let i=0;i<arr.length;i++) {
+
+while (j>=0){
+                 
       forw+=  arr[i][i];
-       return forw; 
+          
+         
+         back+=  arr[i][j];
+        j--;
+    }
+
     }
     
-    for (let j=arr.length;j>=0;j--) {
-        
-      back+=  arr[j][j];
-        return back;
-    }
-    
-    return (Math.abs(back-forw))
+     return (Math.abs(back-forw))
     
 
 }
 
 console.log(diagonalDifference(arr))
+
+
+//----------------------
+
