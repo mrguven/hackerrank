@@ -547,6 +547,24 @@ var server = http.createServer(function (req,res) {
 
 })
 
+
+
+
+//----
+
+
+app.get('/',(req.res)=> {
+    console.log ("Hello World")
+    res.sendStatus(500);
+    res.send("Hi")
+}   )
+
+
+
+
+
+
+
 */ 
 
 
@@ -592,14 +610,15 @@ function diagonalDifference(arr) {
     let result=0;
     let j=arr.length-1;
    for (let i=0;i<arr.length;i++) {
-
+forw+=  arr[i][i];
 while (j>=0){
                  
-      forw+=  arr[i][i];
+      
           
          
          back+=  arr[i][j];
         j--;
+        break;
     }
 
     }
