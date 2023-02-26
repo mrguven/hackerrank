@@ -542,10 +542,25 @@ json is data format
 
 
 var http = requare('http');
+var fs = require('fs');
  
 var server = http.createServer(function (req,res) {
 
+fs.readfile('index.html',function(err,data) {
+    
 })
+
+
+res.write('<html><h1>hello world <h/></html/>')
+
+
+
+
+})
+
+
+
+
 
 
 
