@@ -1,13 +1,13 @@
-var http = requare('http');
-var fs = require('fs');
+import { createServer } from 'http';
+import { readfile, readFile } from 'fs';
  
-var server = http.createServer(function (req,res) {
+var server = createServer(function (req,res) {
 
 
     
     if(req.url=='/') {
 
-fs.readfile('index.html',function(err,data) {
+        readfile('index.html',function(err,data) {
 
 
      res.write(data);  
@@ -23,7 +23,7 @@ fs.readfile('index.html',function(err,data) {
 
 if(req.url=='/login') {
 
-        fs.readFile('login.html',function(err,data){
+        readFile('login.html',function(err,data){
             
             res.write(data);
 
