@@ -547,7 +547,7 @@ var fs = require('fs');
 var server = http.createServer(function (req,res) {
 
 fs.readfile('index.html',function(err,data) {
-    
+
 })
 
 
@@ -560,9 +560,18 @@ res.write('<html><h1>hello world <h/></html/>')
 
 
 
+set() method => 
 
+var express = require ('express');
 
-
+var app = express();
+app.get('/', function (req,res) {
+    fs.readFile('/index.html', function(err,data) {
+        res.write(data);
+        res.end('this is end');
+        console.log('homeController');
+    })
+})
 
 
 //----
@@ -573,6 +582,13 @@ app.get('/',(req.res)=> {
     res.sendStatus(500);
     res.send("Hi")
 }   )
+
+
+
+
+
+
+
 
 
 
