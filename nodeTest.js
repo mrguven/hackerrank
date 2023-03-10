@@ -1,5 +1,6 @@
 import { createServer } from 'http';
 import { readfile, readFile } from 'fs';
+import { CLIENT_RENEG_LIMIT } from 'tls';
 
 var express= require('express');
  
@@ -37,6 +38,23 @@ if(req.url=='/login') {
 
 
     
+})
+
+
+
+var attantion = new Promise(function(resolve,reject) {
+    if (true) {
+        resolve ('it is completed') 
+    }
+    else {
+        reject ('failure')
+    }
+});
+
+attantion.then(function(data) {
+    console.log(data)
+}).catch(function(error) {
+    console.log(error)
 })
 
 
