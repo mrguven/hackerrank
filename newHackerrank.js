@@ -623,7 +623,9 @@ new promise (function(resolve,reject){
 })
 
 
-
+app.get('/admin', function(req,res)  {
+res.send('Hello world')
+});
 
 
 
