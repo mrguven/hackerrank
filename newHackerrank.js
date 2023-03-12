@@ -628,7 +628,10 @@ app.get('/admin', function(req,res)  {
 res.send('Hello world')
 });
 
-
+const showToFriends = function (phone) {
+    const message = "he friends this is my new Phone" + phone.name;
+    return Promise.resolve(message);
+}
 
 
 //------------------
