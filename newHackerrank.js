@@ -624,6 +624,7 @@ new promise (function(resolve,reject){
 
 
 app.get('/admin', function(req,res)  {
+    console.log('ID ' + req.query.id)
 res.send('Hello world')
 });
 

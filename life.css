@@ -3,3 +3,13 @@
     justify-content: center;
     
 }
+
+body {
+    background-color: rgb(228, 235, 241);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    
+}
