@@ -93,7 +93,10 @@ const askMom = function(){
 }
 
 
-
+const showToFriends = function (phone) {
+    const message = "he friends this is my new Phone" + phone.name;
+    return Promise.resolve(message);
+}
 
 
 
