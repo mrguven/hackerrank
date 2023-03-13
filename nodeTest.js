@@ -67,6 +67,14 @@ attantion.then(function(data) {
 
 */
 
+
+class App extends React.Component {
+    render() {
+        return <h1>Welcome</h1>
+    }
+}
+
+
 isMomHappy=true;
 const willGetNewPhone = new Promise((resolve, reject) => {
     if (isMomHappy) {

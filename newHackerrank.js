@@ -599,18 +599,6 @@ app.get('/', function (req,res) {
 
 
 
-
-
-
-
-
-
-
-*/ 
-
-
-//----------------
-
 new promise (function(resolve,reject){
     setTimeout(() => {
         resolve(5)
@@ -628,13 +616,42 @@ app.get('/admin', function(req,res)  {
 res.send('Hello world')
 });
 
-const showToFriends = function (phone) {
-    const message = "he friends this is my new Phone" + phone.name;
-    return Promise.resolve(message);
+
+
+
+--fetch().then(res => res.json()
+);
+
+--async-await ----
+
+function fetchPosts() {
+    const  response = fetch("https://jsonplaceholder.typicode.com/posts").then(res=> res.json())
 }
 
 
+
+*/ 
+
+
+//----------------
+
+
+
+
 //------------------
+
+
+//--async-await ----
+
+function fetchPosts() {
+    const  response = fetch("https://jsonplaceholder.typicode.com/posts").then(res=> res.json())
+}
+
+
+
+
+
+
 
 
 
