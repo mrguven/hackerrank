@@ -58,19 +58,17 @@ attantion.then(function(data) {
 })
 
 
-
-
-
-
-
-
-
-*/
-
-
 class App extends React.Component {
+
+    style={
+        fontStyle:"bold",
+        color:"teal"
+    }
+
     render() {
-        return <h1>Welcome</h1>
+        return <div className="App">
+            <h1 style={this.style}>Welcome</h1>
+            </div>
     }
 }
 
@@ -105,6 +103,16 @@ const showToFriends = function (phone) {
     const message = "he friends this is my new Phone" + phone.name;
     return Promise.resolve(message);
 }
+
+
+
+
+
+
+
+*/
+
+
 
 
 
