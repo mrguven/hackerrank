@@ -635,6 +635,26 @@ function fetchPosts() {
 
 Async and await
 
+
+class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {favoritecolor:"red"};
+    }
+
+    render() {
+        return(
+            <h1> My favorite Color is {this.state.favoritecolor}  </h1>
+        )
+    }
+
+}
+
+const root= ReactDom.createRoot(document.getElementById('root'));
+root.render(<Header />);
+
+
+
 */ 
 
 
