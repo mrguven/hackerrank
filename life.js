@@ -1,2 +1,3 @@
-let singUp = buttonSingUp.addEventListener("onclick",()=> {"location.href = www.nos.nl"});
+ 
 let buttonSingUp = document.getElementById("singUp");
+buttonSingUp.addEventListener("click",()=> {window.location.href = "https://www.nos.nl"});
