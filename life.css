@@ -12,11 +12,23 @@ body {
 .btn {
     display: flex;
         justify-content: center;
+        margin: 5%;
+        
+}
+
+.btn button {
+    padding: 1%;
+    margin: 2%;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+   position: absolute;
+   
 
+}
+
+.footer a {
+    margin : 1%;
 }
