@@ -619,7 +619,7 @@ res.send('Hello world')
 
 
 
---fetch().then(res => res.json()
+--fetch().then(res => res.json() = we can pull data from API
 );
 
 --async-await ----
@@ -628,7 +628,12 @@ function fetchPosts() {
     const  response = fetch("https://jsonplaceholder.typicode.com/posts").then(res=> res.json())
 }
 
+function fetchPosts() {
+    const  response = fetch("https://jsonplaceholder.typicode.com/posts").then(res=> res.json())
+}
 
+
+Async and await
 
 */ 
 
@@ -643,9 +648,6 @@ function fetchPosts() {
 
 //--async-await ----
 
-function fetchPosts() {
-    const  response = fetch("https://jsonplaceholder.typicode.com/posts").then(res=> res.json())
-}
 
 
 

@@ -1,16 +1,22 @@
+body {
+    background-color: rgb(228, 235, 241);
+}
+
 .LoginForm {
     display: flex;
     justify-content: center;
-    margin-top: 30%;
+    margin-top: 20%;
     
 }
 
-body {
-    background-color: rgb(228, 235, 241);
+.btn {
+    display: flex;
+        justify-content: center;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-top: 10%;
+
 }
