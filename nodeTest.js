@@ -104,16 +104,6 @@ const showToFriends = function (phone) {
     return Promise.resolve(message);
 }
 
-fu
-
-
-
-
-
-*/
-
-
-
 function Car() {
     const [car,setCar] = useState({
         brand:"Ford";
@@ -126,6 +116,7 @@ const updateColor= ( ) => {
     setCar(previousState=> {
     return {...previousState,color:"blue"} 
 })
+}
 
 return (
     <>
@@ -141,10 +132,17 @@ return (
     </>
 )
 
-
-
-
 }
+
+
+
+
+
+*/
+
+
+
+
 
 
 
