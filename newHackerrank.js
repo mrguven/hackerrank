@@ -1,3 +1,4 @@
+import { application } from "express";
 
 let bill=[12,12,12,6,8,10]
 
@@ -655,6 +656,8 @@ root.render(<Header />);
 
 
 
+
+
 */ 
 
 
@@ -671,7 +674,15 @@ root.render(<Header />);
 
 
 
+export default function Header () {
 
+    <button onClick={shoot} >talls;d</button>
+            // in the react, the functions is written inside curly braces
+    function shoot() {
+        application.GeolocationCoordinat();
+    }
+
+}
 
 
 

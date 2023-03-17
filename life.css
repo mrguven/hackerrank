@@ -6,6 +6,8 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20%;
+    border: 1px inset firebrick;
+    border-radius: 10%;
     
 }
 
@@ -25,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
    position: absolute;
-   
+
 
 }
 
