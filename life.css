@@ -3,8 +3,11 @@ body {
 }
 
 .head {
-    font-size: 100px;
+    font-size: 80px;
     font-style:oblique;
+    text-align: center;
+    
+    
 }
 
 .LoginForm {
