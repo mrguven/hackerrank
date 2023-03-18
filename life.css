@@ -12,6 +12,8 @@ body {
 
 .LoginForm {
     display: flex;
+    flex-direction: column;
+    width: 60%;
     justify-content: center;
     margin-top: 20%;
     border: 1px inset firebrick;
