@@ -4,12 +4,15 @@ import {useState} from "react";
 function newCar () {
     const [color,setColor] = useState("blue");
 
-    setColor(color="red")
+    setColor("red");
 
 return (
 
     <>
-    <h1> this </h1>
+
+    <button onClick={setColor}>ChangeColor</button>
+
+    <h1> this is new  {color} </h1>
 
 </>
 )
@@ -19,5 +22,6 @@ return (
 
 
 
-
+const root = reactDom.createRoot(document.getElementById('root'));
+root.render(<newCar />);
 
