@@ -38,11 +38,13 @@ body {
 .footer {
     display: flex;
     justify-content: center;
-   position: absolute;
+justify-content: center;
+
 
 
 }
 
 .footer a {
     margin : 1%;
+    
 }
