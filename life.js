@@ -238,11 +238,24 @@ var person = [
   }
 ]
 
+ 
+var submit = document.getElementById('submit');
+
+var submitAction = sub
 
 
-if (userName===person.username) {
-    
+if (userName.value===person.username) {
+
+    window.location('http://www.nos.nl')
+
+
+
 }
+
+userName.addEventListener("change",
+()=> console.log(userName.value)
+)
+
 
 
 
