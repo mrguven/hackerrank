@@ -25,3 +25,27 @@ return (
 const root = reactDom.createRoot(document.getElementById('root'));
 root.render(<newCar />);
 
+
+
+
+ 
+function Car () {
+    const [car,setCar] = useState({
+        brand: "Ford",
+        model:"Mustang",
+        year:1983,
+        color:"red"
+    })
+
+    
+
+
+
+
+
+
+}
+
+
+
+
