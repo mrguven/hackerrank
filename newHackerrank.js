@@ -655,7 +655,12 @@ const root= ReactDom.createRoot(document.getElementById('root'));
 root.render(<Header />);
 
 
+const person ={
+    firstName:'rauf',
+    lastName:'guven',
+}
 
+console.log(`my name is ${firstName} and my last name is {lastName} `)
 
 
 
