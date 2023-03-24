@@ -658,9 +658,16 @@ root.render(<Header />);
 const person ={
     firstName:'rauf',
     lastName:'guven',
-}
 
-console.log(`my name is ${firstName} and my last name is {lastName} `)
+fullName: function() { return `my name is ${person.firstName} 
+and my last name is {person.lastName} `}
+
+
+};
+
+console.log(person.fullName());
+
+
 
 
 
