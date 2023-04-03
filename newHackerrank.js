@@ -667,7 +667,8 @@ and my last name is {person.lastName} `}
 
 console.log(person.fullName());
 
-
+//getters=> access to properties
+//setters=> change properties of object
 
 
 
