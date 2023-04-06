@@ -587,8 +587,8 @@ app.get('/',(req.res)=> {
 
  
 
-
-
+  port is the path that the program follow this path
+-- file server is example "google drive", "dropbox"
 //----------------
 
 
